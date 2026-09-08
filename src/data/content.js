@@ -166,6 +166,21 @@ export const content = {
         emoji: '👾',
       },
       {
+        slug: 'iot-rfid-pintu',
+        title: 'Pintu Otomatis RFID + Sensor Api',
+        category: 'IoT • Arduino',
+        desc: 'Sistem IoT Arduino: pintu terbuka otomatis dengan kartu RFID, plus sensor api sebagai pengaman.',
+        longDesc:
+          'Proyek IoT berbasis Arduino — pintu terbuka otomatis saat kartu RFID terdaftar ditempelkan, dan sensor api memicu alarm sebagai sistem pengaman ruangan. Dibangun dan diuji sebagai prototype hardware.',
+        tech: ['Arduino', 'RFID', 'Sensor Api', 'IoT'],
+        status: 'Prototype',
+        demo: null,
+        github: 'https://github.com/Asmaraloka-create',
+        image: null,
+        art: 'from-orange-400 via-red-500 to-rose-600',
+        emoji: '🚪',
+      },
+      {
         slug: 'kolaborasi',
         title: 'Projek Berikutnya?',
         category: 'Terbuka untuk Kolaborasi',
@@ -384,6 +399,21 @@ export const content = {
         image: null,
         art: 'from-sky-400 via-indigo-500 to-violet-600',
         emoji: '👾',
+      },
+      {
+        slug: 'iot-rfid-pintu',
+        title: 'Automatic RFID Door + Fire Sensor',
+        category: 'IoT • Arduino',
+        desc: 'Arduino-based IoT system: doors unlock automatically with an RFID card, plus a fire sensor for safety.',
+        longDesc:
+          'An Arduino-based IoT project — doors unlock automatically when a registered RFID card is tapped, and a fire sensor triggers an alarm as room safety. Built and tested as a hardware prototype.',
+        tech: ['Arduino', 'RFID', 'Fire Sensor', 'IoT'],
+        status: 'Prototype',
+        demo: null,
+        github: 'https://github.com/Asmaraloka-create',
+        image: null,
+        art: 'from-orange-400 via-red-500 to-rose-600',
+        emoji: '🚪',
       },
       {
         slug: 'kolaborasi',
