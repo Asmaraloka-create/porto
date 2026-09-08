@@ -1,6 +1,9 @@
 // Seluruh teks website dalam 2 bahasa penuh: Indonesia (id) & English (en).
 // Ganti bahasa dari tombol ID|EN di navbar — pilihan tersimpan otomatis.
 
+// Base path ("/" lokal, "/porto/" di GitHub Pages) agar foto public selalu ketemu
+const B = import.meta.env.BASE_URL;
+
 const shared = {
   name: 'Candrayasa',
   since: '2014',
@@ -9,8 +12,8 @@ const shared = {
   github: 'https://github.com/Asmaraloka-create',
   instagram: 'https://www.instagram.com/c_shinesun/?hl=en',
   // Foto portrait utuh (depan & belakang)
-  photo: '/foto-depan.jpg',
-  photoBack: '/foto-belakang.jpg',
+  photo: `${B}foto-depan.jpg`,
+  photoBack: `${B}foto-belakang.jpg`,
 };
 
 export const content = {
@@ -126,7 +129,7 @@ export const content = {
         status: 'Live',
         demo: 'https://kurumi-v5.vercel.app',
         github: 'https://github.com/Asmaraloka-create',
-        image: '/projects/kurumi.jpg',
+        image: `${B}projects/kurumi.jpg`,
         art: 'from-amber-300 via-orange-400 to-rose-500',
         emoji: '🎓',
       },
@@ -142,7 +145,7 @@ export const content = {
         demo: 'https://asmaraloka-create.github.io/gaming-website-project/',
         github: 'https://github.com/Asmaraloka-create',
         image:
-          '/projects/game.jpg',
+          `${B}projects/game.jpg`,
         art: 'from-lime-300 via-emerald-400 to-teal-500',
         emoji: '🎮',
       },
@@ -346,7 +349,7 @@ export const content = {
         status: 'Live',
         demo: 'https://kurumi-v5.vercel.app',
         github: 'https://github.com/Asmaraloka-create',
-        image: '/projects/kurumi.jpg',
+        image: `${B}projects/kurumi.jpg`,
         art: 'from-amber-300 via-orange-400 to-rose-500',
         emoji: '🎓',
       },
@@ -362,7 +365,7 @@ export const content = {
         demo: 'https://asmaraloka-create.github.io/gaming-website-project/',
         github: 'https://github.com/Asmaraloka-create',
         image:
-          '/projects/game.jpg',
+          `${B}projects/game.jpg`,
         art: 'from-lime-300 via-emerald-400 to-teal-500',
         emoji: '🎮',
       },
