@@ -9,12 +9,12 @@ export default function Testimonials() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
 
-  // auto-muter tiap 4 detik ala slider Framer
+  // auto-muter tiap 3 detik ala slider Framer
   useEffect(() => {
     if (paused) return;
     const timer = setInterval(() => {
       setIndex((i) => (i + 1) % testimonials.length);
-    }, 4000);
+    }, 3000);
     return () => clearInterval(timer);
   }, [paused, testimonials.length]);
 
