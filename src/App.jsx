@@ -17,11 +17,26 @@ function ScrollToTop() {
   return null;
 }
 
+// Scroll ke anchor (#bio, #services, #contact) setelah pindah halaman
+function HashScroll() {
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (hash) {
+      const timer = setTimeout(() => {
+        document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: 'smooth' });
+      }, 120);
+      return () => clearTimeout(timer);
+    }
+  }, [pathname, hash]);
+  return null;
+}
+
 export default function App() {
   return (
     <LanguageProvider>
       <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
+      <HashScroll />
       <div className="min-h-screen">
         <Navbar />
         <main>

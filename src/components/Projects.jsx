@@ -35,9 +35,9 @@ export function ProjectCard({ p, index = 0 }) {
   const isInternal = p.demo && p.demo.startsWith('#');
   const demoBtn = p.demo ? (
     isInternal ? (
-      <a href={p.demo} className="text-sm font-semibold underline underline-offset-4">
+      <Link to="/#contact" className="text-sm font-semibold underline underline-offset-4">
         {t.contactMe}
-      </a>
+      </Link>
     ) : (
       <a href={p.demo} target="_blank" rel="noreferrer" className="text-sm font-semibold underline underline-offset-4">
         {t.visit}
@@ -96,7 +96,7 @@ export default function Projects() {
           </div>
         </Reveal>
         <div className="mt-8 grid sm:grid-cols-2 gap-4">
-          {projects.map((p, i) => (
+          {projects.slice(0, 4).map((p, i) => (
             <ProjectCard key={p.slug} p={p} index={i} />
           ))}
         </div>
