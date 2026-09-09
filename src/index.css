@@ -22,10 +22,17 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   @apply bg-cream text-ink font-body antialiased;
+  overflow-x: clip;
+}
+
+/* anchor tidak ketutup navbar fixed (penting di HP) */
+section[id] {
+  scroll-margin-top: 84px;
 }
 
 .font-display {

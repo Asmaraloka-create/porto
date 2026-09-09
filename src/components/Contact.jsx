@@ -21,7 +21,7 @@ export default function Contact() {
     <section id="contact" className="px-4 py-14">
       <div className="mx-auto max-w-6xl rounded-[2rem] bg-[#161513] text-[#F2F0EA] p-8 md:p-14">
         <Reveal>
-          <h2 className="font-display text-5xl md:text-7xl font-semibold">{t.contactTitle}</h2>
+          <h2 className="font-display text-4xl sm:text-5xl md:text-7xl font-semibold">{t.contactTitle}</h2>
           <p className="mt-3 text-white/70 max-w-xl">{t.contactSub}</p>
         </Reveal>
         <div className="mt-8 grid md:grid-cols-2 gap-8">
